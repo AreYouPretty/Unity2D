@@ -27,4 +27,9 @@ public class MemoryCard : MonoBehaviour
             cardBack.SetActive(false);
         }
     }
+
+    public void Unreveal()
+    {
+        cardBack.SetActive(true);
+    }
 }
