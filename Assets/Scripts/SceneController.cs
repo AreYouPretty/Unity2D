@@ -43,12 +43,12 @@ public class SceneController : MonoBehaviour
                 {
                     card = originalCard;
                 }
-                else 
+                else
                 {
                     card = Instantiate(originalCard) as MemoryCard;
                 }
 
-                int index = j * gridCols * + i;
+                int index = j * gridCols * +i;
                 int id = numbers[index];
                 card.SetCard(id, images[id]);
 
@@ -70,10 +70,10 @@ public class SceneController : MonoBehaviour
             }
             return newArray;
         }
-        
+
         public void CardRevealed(MemoryCard card)
         {
-            if(_firstRevealed==null)
+            if (_firstRevealed == null)
             {
                 _firstRevealed = card;
             }
