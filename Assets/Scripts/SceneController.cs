@@ -70,5 +70,19 @@ public class SceneController : MonoBehaviour
             }
             return newArray;
         }
+        
+        public void CardRevealed(MemoryCard card)
+        {
+            if(_firstRevealed==null)
+            {
+                _firstRevealed = card;
+            }
+            else
+            {
+                _secondRevealed = card;
+                Debug.Log("Match? " + (_firstRevealed.id == _secondRevealed.id));
+            }
+
+        }
     }
 }
